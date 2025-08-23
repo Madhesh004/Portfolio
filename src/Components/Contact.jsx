@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import emailjs from "emailjs-com";
 
 // Reusable animated input component
 const AnimatedInput = ({ name, type, placeholder, value, onChange, onFocus, onBlur, shake, focused, className = '' }) => {
@@ -111,14 +112,25 @@ const Contact = () => {
       setValidationErrors(errors);
       return;
     }
-    // Form is valid, handle submission logic (e.g., API call)
-    console.log('Form data submitted:', formData);
-
-    // Clear form and show success message
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setValidationErrors({});
-    setShowSuccess(true);
-    setTimeout(() => setShowSuccess(false), 3000);
+    emailjs
+      .send(
+        "service_slmwrgn",    // replace with EmailJS Service ID
+        "template_g1l0qxg",   // replace with EmailJS Template ID
+        formData,             // { name, email, subject, message }
+        "d8x0ccS-QtDFhpvsk"     // replace with EmailJS Public Key
+      )
+      .then(
+        () => {
+          console.log("Message sent successfully!");
+          setFormData({ name: "", email: "", subject: "", message: "" });
+          setValidationErrors({});
+          setShowSuccess(true);
+          setTimeout(() => setShowSuccess(false), 3000);
+        },
+        (error) => {
+          console.error("FAILED...", error.text);
+        }
+      );
   };
 
   return (
@@ -168,7 +180,7 @@ const Contact = () => {
               GitHub
             </a>
             <a
-              href="https://leetcode.com/u/Madhesh"
+              href="https://leetcode.com/u/Madhesh04/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-500 transition-colors"

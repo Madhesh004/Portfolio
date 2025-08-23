@@ -75,19 +75,30 @@ const About = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        <h3 className="mb-10 text-2xl font-bold">About</h3>
-        <p className="text-xl font-semibold">
-          I am a Full-stack developer with a focus on building complete, end-to-end applications.
-          I specialize in creating modern, responsive user interfaces using React.js, JavaScript, and Tailwind CSS.
-          On the back-end, I am proficient in Node.js, where I design and implement robust server-side logic and REST APIs.
-          I use MongoDB for efficient data management and Postman for API testing and development.
-          My comprehensive skill set allows me to seamlessly connect the front-end and back-end,
-          delivering cohesive and high-performance digital solutions.
+        <h3 className="mb-8 text-2xl font-bold">About</h3>
+        <p className="text-xl font-normal leading-snug mb-4">
+          I am a passionate Full-stack Developer dedicated to building complete, end-to-end applications. 
+          My focus is on creating modern, responsive, and user-friendly digital experiences.
+        </p>
+        <p className="text-xl font-normal leading-snug mb-4">
+          On the front-end, I specialize in React.js, JavaScript, and Tailwind CSS to craft intuitive and engaging interfaces.
+        </p>
+        <p className="text-xl font-normal leading-snug mb-4">
+          On the back-end, I design and implement robust server-side logic and REST APIs using Node.js, 
+          while managing data efficiently with MongoDB.
+        </p>
+        <p className="text-xl font-normal leading-snug">
+          With strong skills in both development and testing (Postman for API validation), 
+          I bridge the gap between front-end and back-end to deliver cohesive, high-performance solutions.
         </p>
 
-        <button className="flex items-center bg-transparent border p-2 hover:bg-black focus:ring text-xl font-semibold text-white rounded-lg mt-10 lexend-deca">
+        <a
+          href="/Madhesh_Resume.pdf"
+          download
+          className="flex  items-center bg-transparent border p-2 hover:bg-black focus:ring text-xl font-semibold text-white rounded-lg mt-10 "
+        >
           Resume <MdOutlineFileDownload className="ml-2" />
-        </button>
+        </a>
 
         {/* Skills */}
         <div className="mt-8 text-2xl font-medium">
