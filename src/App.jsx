@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import myPhoto from "./assets/myPhoto.jpg";
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";
 import Education from "./Components/Education";
@@ -64,8 +63,11 @@ export default function App() {
       {/* Hero Section */}
       <section
         id="Home"
-        className="min-h-screen scroll-mt-24 mt-24 px-4 flex flex-col lg:flex-row items-center lg:items-center justify-center gap-10 max-w-6xl mx-auto"
+        className="min-h-screen scroll-mt-24 mt-24 px-4 flex flex-col lg:flex-row items-center lg:items-center justify-center gap-10 max-w-6xl mx-auto relative"
       >
+        <div className="absolute -z-10 w-72 h-72 bg-indigo-500/30 rounded-full blur-3xl top-10 left-10 animate-pulse" />
+        <div className="absolute -z-10 w-72 h-72 bg-purple-500/30 rounded-full blur-3xl bottom-10 right-10 animate-pulse" />
+
         {/* Animated Intro Text */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -97,15 +99,7 @@ export default function App() {
           </motion.div>
         </motion.div>
 
-        {/* Profile Image */}
-        <div className="flex-shrink-0 mb-10 lg:mb-0 flex justify-center lg:justify-end">
-          <img
-            src={myPhoto}
-            alt="Profile"
-            loading="lazy"
-            className="w-40 h-40 sm:w-56 sm:h-56 lg:w-64 lg:h-64 object-cover rounded-full border-4 border-white shadow-lg"
-          />
-        </div>
+
       </section>
 
       {/* About Section */}

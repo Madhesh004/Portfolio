@@ -12,50 +12,78 @@ const EducationExperience = () => {
         className="w-full max-w-3xl"
       >
         {/* ================== Education ================== */}
-        <h6 className="text-3xl font-bold mb-6">Education</h6>
-        <div className="flex flex-col text-xl border border-gray-700 rounded-lg font-semibold p-6 bg-transparent space-y-2 shadow-md mb-12">
+        <motion.h6
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-3xl font-bold mb-6 text-indigo-400"
+        >
+          Education
+        </motion.h6>
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="flex flex-col text-xl border border-gray-600 rounded-lg font-semibold p-6 bg-gray-900/40 space-y-3 shadow-lg mb-12 backdrop-blur-sm"
+        >
           <p>
-            <span className="block mb-1 text-lg text-gray-300">College</span>
-            <span className="block text-base text-gray-100 font-normal">
+            <span className="block mb-1 text-lg text-indigo-300">College</span>
+            <span className="block text-base text-gray-200 font-normal">
               Veltech HighTech Dr.Rangarajan Dr.Sakunthala Engineering College
             </span>
           </p>
           <p>
-            <span className="block mb-1 text-lg text-gray-300">Course</span>
-            <span className="block text-base text-gray-100 font-normal">
+            <span className="block mb-1 text-lg text-indigo-300">Course</span>
+            <span className="block text-base text-gray-200 font-normal">
               B.E Computer Science and Engineering
             </span>
           </p>
           <p>
-            <span className="block mb-1 text-lg text-gray-300">Duration</span>
-            <span className="block text-base text-gray-100 font-normal">
+            <span className="block mb-1 text-lg text-indigo-300">Duration</span>
+            <span className="block text-base text-gray-200 font-normal">
               Nov 2022 - Present
             </span>
           </p>
-        </div>
+        </motion.div>
 
         {/* ================== Experience ================== */}
-        <h6 className="text-3xl font-bold mb-6">Experience</h6>
-        <div className="flex flex-col text-xl border border-gray-700 rounded-lg font-semibold p-6 bg-transparent space-y-2 shadow-md mb-12">
+        <motion.h6
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="text-3xl font-bold mb-6 text-indigo-400"
+        >
+          Experience
+        </motion.h6>
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="flex flex-col text-xl border border-gray-600 rounded-lg font-semibold p-6 bg-gray-900/40 space-y-3 shadow-lg mb-12 backdrop-blur-sm"
+        >
           <p>
-            <span className="block mb-1 text-lg text-gray-300">Role</span>
-            <span className="block text-base text-gray-100 font-normal">
+            <span className="block mb-1 text-lg text-indigo-300">Role</span>
+            <span className="block text-base text-gray-200 font-normal">
               Software Developer Intern
             </span>
           </p>
           <p>
-            <span className="block mb-1 text-lg text-gray-300">Company</span>
-            <span className="block text-base text-gray-100 font-normal">
+            <span className="block mb-1 text-lg text-indigo-300">Company</span>
+            <span className="block text-base text-gray-200 font-normal">
               Userorbit
             </span>
           </p>
           <p>
-            <span className="block mb-1 text-lg text-gray-300">Duration</span>
-            <span className="block text-base text-gray-100 font-normal">
+            <span className="block mb-1 text-lg text-indigo-300">Duration</span>
+            <span className="block text-base text-gray-200 font-normal">
               Jan 2025 - Present
             </span>
           </p>
-        </div>
+        </motion.div>
       </motion.div>
     </div>
   );

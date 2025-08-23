@@ -75,30 +75,66 @@ const About = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        <h3 className="mb-8 text-2xl font-bold">About</h3>
-        <p className="text-xl font-normal leading-snug mb-4">
-          I am a passionate Full-stack Developer dedicated to building complete, end-to-end applications. 
+        <motion.h3
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mb-8 text-2xl font-bold"
+        >
+          About
+        </motion.h3>
+        <motion.p
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="text-xl font-normal leading-snug mb-4"
+        >
+          I am a passionate Software Developer dedicated to building complete, end-to-end applications. 
           My focus is on creating modern, responsive, and user-friendly digital experiences.
-        </p>
-        <p className="text-xl font-normal leading-snug mb-4">
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="text-xl font-normal leading-snug mb-4"
+        >
           On the front-end, I specialize in React.js, JavaScript, and Tailwind CSS to craft intuitive and engaging interfaces.
-        </p>
-        <p className="text-xl font-normal leading-snug mb-4">
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="text-xl font-normal leading-snug mb-4"
+        >
           On the back-end, I design and implement robust server-side logic and REST APIs using Node.js, 
           while managing data efficiently with MongoDB.
-        </p>
-        <p className="text-xl font-normal leading-snug">
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          viewport={{ once: true }}
+          className="text-xl font-normal leading-snug"
+        >
           With strong skills in both development and testing (Postman for API validation), 
           I bridge the gap between front-end and back-end to deliver cohesive, high-performance solutions.
-        </p>
+        </motion.p>
 
-        <a
+        <motion.a
           href="/Madhesh_Resume.pdf"
           download
-          className="flex  items-center bg-transparent border p-2 hover:bg-black focus:ring text-xl font-semibold text-white rounded-lg mt-10 "
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 1 }}
+          viewport={{ once: true }}
+          className="inline-flex items-center bg-transparent border px-3 py-1 hover:bg-black focus:ring text-base font-semibold text-white rounded-md mt-10 w-auto"
         >
           Resume <MdOutlineFileDownload className="ml-2" />
-        </a>
+        </motion.a>
 
         {/* Skills */}
         <div className="mt-8 text-2xl font-medium">
