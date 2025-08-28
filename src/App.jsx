@@ -8,7 +8,7 @@ import Contact from "./Components/Contact";
 
 const lines = [
   {
-    words: ["Hi,", "I", "am", "Madhesh", "K"],
+    words: ["Hi,", "I", "am", "Madhesh"],
     className: "font-lexend text-white text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2",
   },
   {
@@ -63,7 +63,7 @@ export default function App() {
       {/* Hero Section */}
       <section
         id="Home"
-        className="min-h-screen scroll-mt-24 mt-24 px-4 flex flex-col lg:flex-row items-center lg:items-center justify-center gap-10 max-w-6xl mx-auto relative"
+        className="min-h-screen scroll-mt-24 px-4 flex flex-col lg:flex-row items-center lg:items-center justify-center gap-10 max-w-6xl mx-auto relative"
       >
         <div className="absolute -z-10 w-72 h-72 bg-indigo-500/30 rounded-full blur-3xl top-10 left-10 animate-pulse" />
         <div className="absolute -z-10 w-72 h-72 bg-purple-500/30 rounded-full blur-3xl bottom-10 right-10 animate-pulse" />

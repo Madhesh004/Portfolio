@@ -25,3 +25,20 @@
 .hover-scale-up:hover {
   transform: scale(1.05);
 }
+
+/* Navbar hover scroll animation */
+@keyframes scrollText {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.nav-scroll:hover {
+  animation: scrollText 0.6s ease-in-out forwards;
+}

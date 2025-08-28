@@ -34,7 +34,7 @@ const Navbar = () => {
             <li key={item}>
               <a
                 href={`#${item}`}
-                className="hover:text-purple-400 transition-colors duration-300"
+                className="hover:text-purple-400 transition-colors duration-300 inline-block overflow-hidden nav-scroll"
               >
                 {item}
               </a>
@@ -59,7 +59,7 @@ const Navbar = () => {
               key={item}
               href={`#${item}`}
               onClick={() => setMenuOpen(false)}
-              className="block text-white hover:text-purple-400 transition-colors duration-300"
+              className="block text-white hover:text-purple-400 transition-colors duration-300 inline-block overflow-hidden nav-scroll"
             >
               {item}
             </a>

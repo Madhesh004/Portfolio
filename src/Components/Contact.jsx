@@ -93,7 +93,7 @@ const Contact = () => {
       >
         <h4 className="flex flex-col items-center text-3xl font-bold text-white">
           Contact
-          <span className="text-base font-normal ml-1 mb-10">Get in touch</span>
+          <span className="text-base font-normal ml-1 mb-2">Get in touch</span>
         </h4>
 
         <motion.div
@@ -112,7 +112,7 @@ const Contact = () => {
               +91 73053 20168
             </a>
           </p>
-          <p className="mb-4">
+          <p className="mb-3">
             Email:{' '}
             <a href="mailto:madhesh.karthigeyan2@gmail.com" className="text-white hover:text-blue-500">
               madhesh.karthigeyan2@gmail.com
@@ -161,9 +161,9 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="bg-transparent bg-opacity-70 backdrop-blur-md border border-gray-700 rounded-lg p-6 mt-8 shadow-md"
+          className="bg-transparent bg-opacity-70 backdrop-blur-md border border-gray-700 rounded-lg p-6 mt-4 shadow-md"
         >
-          <h5 className="text-xl font-semibold mb-4">Send me a message</h5>
+          <h5 className="text-xl font-semibold mb-1">Send me a message</h5>
           <form
             id="web3form"
             action="https://api.web3forms.com/submit"
@@ -207,7 +207,7 @@ const Contact = () => {
             />
             <motion.button
               type="submit"
-              className="bg-blue-600 hover:bg-blue-700 transition-colors px-4 py-2 rounded-md font-medium mt-6"
+              className="bg-blue-600 hover:bg-blue-700 transition-colors px-4 py-2 rounded-md font-medium mt-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: 'spring', stiffness: 300, damping: 20 }}
