@@ -54,13 +54,10 @@ const containerVariants = {
 export default function App() {
   return (
     <main className="min-h-screen scroll-smooth relative font-lexend">
-      {/* Background Gradient */}
       <div className="fixed inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]" />
 
-      {/* Navbar */}
       <Navbar />
 
-      {/* Hero Section */}
       <section
         id="Home"
         className="min-h-screen scroll-mt-24 px-4 flex flex-col lg:flex-row items-center lg:items-center justify-center gap-10 max-w-6xl mx-auto relative"
@@ -68,7 +65,6 @@ export default function App() {
         <div className="absolute -z-10 w-72 h-72 bg-indigo-500/30 rounded-full blur-3xl top-10 left-10 animate-pulse" />
         <div className="absolute -z-10 w-72 h-72 bg-purple-500/30 rounded-full blur-3xl bottom-10 right-10 animate-pulse" />
 
-        {/* Animated Intro Text */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: -20 }}
@@ -102,7 +98,6 @@ export default function App() {
 
       </section>
 
-      {/* About Section */}
       <section
         id="About"
         className="scroll-mt-24 min-h-screen max-w-4xl mx-auto mt-24 px-4 text-white relative"
@@ -110,7 +105,6 @@ export default function App() {
         <About />
       </section>
 
-      {/* Education Section */}
       <section
         id="Education"
         className="scroll-mt-24 min-h-screen max-w-4xl mx-auto mt-24 px-4 text-white relative"
@@ -118,7 +112,6 @@ export default function App() {
         <Education />
       </section>
 
-      {/* Project Section */}
       <section
         id="Project"
         className="scroll-mt-24 min-h-screen max-w-4xl mx-auto mt-24 px-4 text-white relative"
@@ -126,7 +119,6 @@ export default function App() {
         <Project />
       </section>
 
-      {/* Contact Section */}
       <section
         id="Contact"
         className="scroll-mt-24 min-h-screen max-w-4xl mx-auto mt-24 px-4 text-white relative"

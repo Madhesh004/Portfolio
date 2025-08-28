@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-// Reusable animated input component
 const AnimatedInput = ({ name, type, placeholder, className = '' }) => {
   const inputVariants = {
     focused: { scale: 1.05 },
@@ -22,7 +21,6 @@ const AnimatedInput = ({ name, type, placeholder, className = '' }) => {
   );
 };
 
-// Reusable animated textarea component
 const AnimatedTextarea = ({ name, placeholder, className = '' }) => {
   const textareaVariants = {
     focused: { scale: 1.05 },
@@ -42,7 +40,6 @@ const AnimatedTextarea = ({ name, placeholder, className = '' }) => {
   );
 };
 
-// Main Contact Component
 const Contact = () => {
   useEffect(() => {
     const form = document.getElementById('web3form');
@@ -106,12 +103,7 @@ const Contact = () => {
           <p className="mb-2">
             Name: Madhesh
           </p>
-          <p className="mb-2">
-            Phone:{' '}
-            <a href="tel:+91 73053 20168" className="text-white hover:text-blue-500">
-              +91 73053 20168
-            </a>
-          </p>
+          
           <p className="mb-3">
             Email:{' '}
             <a href="mailto:madhesh.karthigeyan2@gmail.com" className="text-white hover:text-blue-500">
@@ -155,7 +147,6 @@ const Contact = () => {
           </div>
         </motion.div>
 
-        {/* Contact Form */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

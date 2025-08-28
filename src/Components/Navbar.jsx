@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react"; // For hamburger and close icons
+import { Menu, X } from "lucide-react"; 
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -25,10 +25,8 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
-        {/* Logo */}
         <h1 className="font-bold bg-transparent text-lg">Portfolio</h1>
 
-        {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
           {navLinks.map((item) => (
             <li key={item}>
@@ -42,7 +40,6 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Mobile Hamburger Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden focus:outline-none"
@@ -51,7 +48,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu Dropdown */}
       {menuOpen && (
         <div className="md:hidden bg-black/80 backdrop-blur-md px-6 py-4 space-y-4">
           {navLinks.map((item) => (

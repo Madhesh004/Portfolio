@@ -70,14 +70,14 @@ const About = () => {
   return (
     <div className="text-white mt-32 font-lexend">
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
         <motion.h3
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="mb-8 text-2xl font-bold"
@@ -95,7 +95,7 @@ const About = () => {
           My focus is on creating modern, responsive, and user-friendly digital experiences.
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
@@ -114,7 +114,7 @@ const About = () => {
           while managing data efficiently with MongoDB.
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
           viewport={{ once: true }}
@@ -136,11 +136,9 @@ const About = () => {
           Resume <MdOutlineFileDownload className="ml-2" />
         </motion.a>
 
-        {/* Skills */}
         <div className="mt-8 text-2xl font-medium">
           <h4 className="mb-6">Skills</h4>
 
-          {/* Skills Carousel */}
           <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
             <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 animate-infinite-scroll">
               {skills.map((skill, index) => (
@@ -153,7 +151,6 @@ const About = () => {
               ))}
             </ul>
 
-            {/* Duplicate for seamless scroll */}
             <ul aria-hidden="true" className="flex items-center justify-center md:justify-start [&_li]:mx-8 animate-infinite-scroll">
               {skills.map((skill, index) => (
                 <li key={`skill-duplicate-${index}`}>

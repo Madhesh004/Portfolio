@@ -11,7 +11,6 @@ const EducationExperience = () => {
         transition={{ duration: 0.8 }}
         className="w-full max-w-3xl"
       >
-        {/* ================== Education ================== */}
         <motion.h6
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -48,7 +47,6 @@ const EducationExperience = () => {
           </p>
         </motion.div>
 
-        {/* ================== Experience ================== */}
         <motion.h6
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
